@@ -16,6 +16,9 @@ g = Github(auth=auth)
 # Then play with your Github objects:
 repo = g.get_user().get_repo("ChimstatxMWine")
 contents = repo.get_contents("")
+import shutil
+
+shutil.rmtree('Chimstat')
 os.mkdir("Chimstat")
 while contents:
     file_content = contents.pop(0)
