@@ -34,6 +34,7 @@ while contents:
             f.write(file_content.decoded_content)
 # To close connections after use
 g.close()
+os.chdir("Chimstat")
 if 'methodes' not in os.listdir(os.getcwd()):
     os.mkdir('methodes')
 if 'classifier' not in os.listdir(os.getcwd()):
