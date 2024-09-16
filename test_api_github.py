@@ -34,7 +34,7 @@ while contents:
             f.write(file_content.decoded_content)
 # To close connections after use
 g.close()
-print(os.listdir())
 os.chdir("Chimstat")
+print(os.listdir())
 from ui import app
 app.run()
