@@ -34,13 +34,24 @@ while contents:
             f.write(file_content.decoded_content)
 # To close connections after use
 g.close()
-os.chdir("Chimstat")
-os.mkdir("methodes")
-os.mkdir("classifier")
-os.mkdir("fusion_donnees")
-os.mkdir("graphiques")
-os.mkdir("output")
-os.mkdir("prediction")
+if 'methodes' not in os.listdir(os.getcwd()):
+    os.mkdir('methodes')
+if 'classifier' not in os.listdir(os.getcwd()):
+    os.mkdir('classifier')
+if 'output' not in os.listdir(os.getcwd()):
+    os.mkdir('output')  
+if 'prediction' not in os.listdir(os.getcwd()):
+    os.mkdir('prediction')  
+if 'graphiques' not in os.listdir(os.getcwd()):
+    os.mkdir('graphiques')  
+    os.mkdir('graphiques/3D')
+    os.mkdir('graphiques/2D')
+    os.mkdir('graphiques/Screeplot')
+    os.mkdir('graphiques/Contributions')
+    os.mkdir('graphiques/Predictions')
+    os.mkdir('graphiques/Clustering')
+    os.mkdir('graphiques/Confiance')
+
 import sys 
 sys.path.append(os.getcwd())
 from ui import app
