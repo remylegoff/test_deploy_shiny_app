@@ -38,4 +38,4 @@ os.chdir("Chimstat")
 import sys 
 sys.path.append(os.getcwd())
 from ui import app
-app.run()
+app
