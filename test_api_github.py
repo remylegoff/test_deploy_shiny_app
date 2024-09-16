@@ -12,7 +12,7 @@ auth = Auth.Token(os.getenv("GITHUB_TOKEN"))
 g = Github(auth=auth)
 
 # Github Enterprise with custom hostname
-g = Github(base_url="https://github.com/remylegoff/", auth=auth)
+#os.chdir("test_chimstat")
 # Then play with your Github objects:
 repo = g.get_user().get_repo("ChimstatxMWine")
 contents = repo.get_contents("")
@@ -32,4 +32,4 @@ while contents:
 # To close connections after use
 g.close()
 
-os.system("python3 Chimstat/app.py")
+os.system("python3 Chimstat/")
