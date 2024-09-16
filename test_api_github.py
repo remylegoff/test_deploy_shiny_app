@@ -32,4 +32,4 @@ while contents:
 # To close connections after use
 g.close()
 
-os.system("python3 Chimstat/")
+os.system("python3 Chimstat/app.py")
