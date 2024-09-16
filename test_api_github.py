@@ -35,6 +35,12 @@ while contents:
 # To close connections after use
 g.close()
 os.chdir("Chimstat")
+os.mkdir("methodes")
+os.mkdir("classifier")
+os.mkdir("fusion_donnees")
+os.mkdir("graphiques")
+os.mkdir("output")
+os.mkdir("prediction")
 import sys 
 sys.path.append(os.getcwd())
 from ui import app
