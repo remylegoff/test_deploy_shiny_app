@@ -14,6 +14,7 @@ selenium==4.18.1
 shiny==0.9.0
 shinywidgets==0.3.2
 skorch==0.15.0
+torch==2.1.2
 dash-bio==1.0.2
 PyGithub==2.4.0
 gunicorn==22.0.0
