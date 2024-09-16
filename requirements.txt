@@ -23,7 +23,6 @@ backcall==0.2.0
 backoff==1.10.0
 bcrypt==3.2.0
 beautifulsoup4==4.12.2
-beniget==0.4.1
 biopython==1.83
 bleach==4.1.0
 blinker==1.7.0
