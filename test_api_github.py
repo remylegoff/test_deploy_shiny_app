@@ -36,5 +36,5 @@ while contents:
 g.close()
 os.chdir("Chimstat")
 print(os.listdir())
-from ui import app
+exec("ui.py")
 app.run()
