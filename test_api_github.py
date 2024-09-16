@@ -35,6 +35,7 @@ while contents:
 # To close connections after use
 g.close()
 os.chdir("Chimstat")
-print(os.listdir())
-exec("ui.py")
+import sys 
+sys.path.append(os.getcwd())
+from ui import app
 app.run()
