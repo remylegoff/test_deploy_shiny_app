@@ -17,7 +17,6 @@ g = Github(auth=auth)
 repo = g.get_user().get_repo("ChimstatxMWine")
 contents = repo.get_contents("")
 import shutil
-
 if "Chimstat" in os.listdir():
     shutil.rmtree('Chimstat')
 os.mkdir("Chimstat")
