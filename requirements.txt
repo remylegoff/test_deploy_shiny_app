@@ -4,6 +4,7 @@ ipyleaflet==0.18.2
 ipywidgets==8.1.1
 matplotlib==3.7.2
 mbpls==1.0.4
+lxml==4.8.0
 numpy==1.24.4
 openpyxl==3.1.2
 pandas==2.0.3
